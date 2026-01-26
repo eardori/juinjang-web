@@ -1,0 +1,138 @@
+/**
+ * 글램독 포트폴리오 데이터
+ *
+ * @description 운영 중인 8개 글램독 지점 정보
+ */
+
+import { PortfolioLocation } from '@/types/portfolio';
+
+export const portfolioLocations: PortfolioLocation[] = [
+  {
+    id: 'gapyeong',
+    name: '글램독 가평점',
+    slug: 'gapyeong',
+    region: '경기 가평',
+    description: '야외 수영장과 넓은 잔디 운동장을 갖춘 프리미엄 애견 펜션',
+    features: ['야외 수영장', '잔디 운동장', 'BBQ'],
+    address: '경기도 가평군 가평읍 가화로 글램독 애견펜션 가평',
+    coordinates: { lat: 37.8315, lng: 127.5095 },
+    images: [],
+    thumbnail: '/images/portfolio/gapyeong/imgi_1_glamdoggo_88_200.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'cheongpyeong',
+    name: '글램독 청평점',
+    slug: 'cheongpyeong',
+    region: '경기 가평',
+    description: '청평호 리버뷰와 오두막 바베큐장이 특징인 감성 펜션',
+    features: ['청평호 리버뷰', '오두막 바베큐장'],
+    address: '경기도 가평군 청평면 고성리 글램독 애견펜션 청평',
+    coordinates: { lat: 37.7341, lng: 127.4276 },
+    images: [],
+    thumbnail: '/images/portfolio/cheongpyeong/imgi_10_glamdoggcheong_92_271.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'yeonghungdo',
+    name: '글램독 영흥점',
+    slug: 'yeonghungdo',
+    region: '인천 옹진',
+    description: '서해바다 오션뷰와 캠핑 감성을 즐길 수 있는 섬 펜션',
+    features: ['서해바다 오션뷰', '캠핑 감성'],
+    address: '인천광역시 옹진군 영흥면 영흥남로9번길 글램독 애견펜션 영흥도',
+    coordinates: { lat: 37.2583, lng: 126.4967 },
+    images: [],
+    thumbnail: '/images/portfolio/yeonghungdo/imgi_8_glamdogyeong_90_258.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'gyeongju',
+    name: '글램독 경주점',
+    slug: 'gyeongju',
+    region: '경북 경주',
+    description: '넓은 운동장과 수영장, 옛 감성이 어우러진 펜션',
+    features: ['넓은 운동장', '수영장', '옛 감성'],
+    address: '경상북도 경주시 천북면 목실길 글램독 애견펜션 경주',
+    coordinates: { lat: 35.8563, lng: 129.2245 },
+    images: [],
+    thumbnail: '/images/portfolio/gyeongju/imgi_9_glamdoggyeong_91_221.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'tongyeong',
+    name: '글램독 통영점',
+    slug: 'tongyeong',
+    region: '경남 통영',
+    description: '25m 3레인 실내 온수수영장을 갖춘 프리미엄 펜션',
+    features: ['25m 3레인 실내 온수수영장'],
+    address: '경상남도 통영시 광도면 용호로 글램독 애견펜션 통영',
+    coordinates: { lat: 34.8544, lng: 128.4330 },
+    images: [],
+    thumbnail: '/images/portfolio/tongyeong/imgi_1.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'yangyang',
+    name: '글램독 양양점',
+    slug: 'yangyang',
+    region: '강원 양양',
+    description: '서핑과 오션뷰, 글램포레스트가 어우러진 해변 펜션',
+    features: ['서핑', '오션뷰', '글램포레스트'],
+    address: '강원도 양양군 현남면 화상천로 글램독 애견펜션 양양',
+    coordinates: { lat: 37.9892, lng: 128.7621 },
+    images: [],
+    thumbnail: '/images/portfolio/yangyang/imgi_1.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'geoje',
+    name: '글램독 거제점',
+    slug: 'geoje',
+    region: '경남 거제',
+    description: '오션뷰, 인피니티 풀, 미온수수영장을 갖춘 프리미엄 풀빌라',
+    features: ['오션뷰', '인피니티 풀', '미온수수영장'],
+    address: '경상남도 거제시 동부면 함박금길 거제 글램독 애견풀빌라',
+    coordinates: { lat: 34.8806, lng: 128.6211 },
+    images: [],
+    thumbnail: '/images/portfolio/geoje/geoje_01.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+  {
+    id: 'paju',
+    name: '글램독 그라운드 파주점',
+    slug: 'paju',
+    region: '경기 파주',
+    description: '플래그십 지점으로 대형 잔디운동장을 갖춘 프리미엄 펜션',
+    features: ['플래그십', '대형 잔디운동장'],
+    address: '경기도 파주시 문발동 글램독 그라운드 파주점',
+    coordinates: { lat: 37.7586, lng: 126.7803 },
+    images: [],
+    thumbnail: '/images/portfolio/paju/paju_01.jpg',
+    facilities: [],
+    rooms: [],
+    status: 'operating',
+  },
+];
+
+export function getPortfolioBySlug(slug: string): PortfolioLocation | undefined {
+  return portfolioLocations.find((location) => location.slug === slug);
+}
+
+export function getOperatingLocations(): PortfolioLocation[] {
+  return portfolioLocations.filter((location) => location.status === 'operating');
+}
