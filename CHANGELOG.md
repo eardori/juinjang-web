@@ -9,6 +9,29 @@
 
 ---
 
+## [0.2.1] - 2026-01-26
+
+### Added
+- 카카오맵 임베드 컴포넌트 (`src/components/contact/KakaoMap.tsx`)
+- 문의 폼 API 라우트 (`/api/contact`) - Resend 이메일 발송 연동
+- 환경변수 템플릿 (`.env.local.example`)
+- `resend` 패키지 추가 (이메일 발송)
+
+### Changed
+- Contact 페이지: 지도 플레이스홀더 → 실제 카카오맵 임베드
+- Contact 페이지: 구글맵 링크 → 카카오맵 링크
+- Contact 페이지: 텍스트 색상 가독성 개선 (명시적 gray 색상 사용)
+- globals.css: 다크 모드 제거, 라이트 모드 전용으로 변경
+- globals.css: `color-scheme: light only` 강제 적용
+- layout.tsx: `<meta name="color-scheme" content="light only">` 추가
+- Footer: 텍스트 색상 가독성 개선
+
+### Fixed
+- 다크 모드에서 텍스트 가독성 문제 해결 (라이트 모드 전용 적용)
+- 카카오맵 인포윈도우 텍스트 색상 수정
+
+---
+
 ## [0.2.0] - 2026-01-26
 
 ### Added

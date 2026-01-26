@@ -31,9 +31,9 @@ export default function Footer() {
                   <path clipRule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fillRule="evenodd" />
                 </svg>
               </div>
-              <h2 className="text-xl font-extrabold uppercase tracking-tight">Juinjang</h2>
+              <h2 className="text-xl font-extrabold uppercase tracking-tight text-text-primary">Juinjang</h2>
             </div>
-            <p className="text-sm opacity-70 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
               잠들어 있는 공간에 토탈 솔루션.
               <br />
               프리미엄 애견 글램핑 리조트 운영 전문 기업.
@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">서비스</h4>
-            <ul className="space-y-4 text-sm opacity-80">
+            <ul className="space-y-4 text-sm text-gray-700">
               {resourceLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="hover:text-primary transition-colors">
@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Network */}
           <div>
             <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">바로가기</h4>
-            <ul className="space-y-4 text-sm opacity-80">
+            <ul className="space-y-4 text-sm text-gray-700">
               {networkLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="hover:text-primary transition-colors">
@@ -71,17 +71,17 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">연락처</h4>
-            <ul className="space-y-4 text-sm opacity-80">
+            <ul className="space-y-4 text-sm text-gray-700">
               <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-lg">mail</span>
+                <span className="material-symbols-outlined text-lg text-primary">mail</span>
                 contact@juinjang.co.kr
               </li>
               <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-lg">call</span>
+                <span className="material-symbols-outlined text-lg text-primary">call</span>
                 031-791-2597
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-lg">pin_drop</span>
+                <span className="material-symbols-outlined text-lg text-primary">pin_drop</span>
                 <span>경기도 하남시 미사강변동로 72,<br />9층 915호</span>
               </li>
             </ul>
@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-xs opacity-60">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500">
           <p>© 2024 (주)인장매니지먼트. All rights reserved.</p>
           <div className="flex gap-8">
             <Link href="/privacy" className="hover:text-primary">

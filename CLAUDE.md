@@ -486,6 +486,14 @@ src/
 | `text-primary` | `#1d0c0c` | 주요 텍스트 (라이트) |
 | `text-secondary` | `#fcf8f8` | 주요 텍스트 (다크) |
 
+**텍스트 색상 가이드라인:**
+- 주요 텍스트: `text-text-primary` 또는 `text-gray-900`
+- 보조 텍스트: `text-gray-700` (라이트 배경)
+- 설명 텍스트: `text-gray-600`
+- 비활성 텍스트: `text-gray-500`
+
+> ⚠️ **주의**: 텍스트에 `opacity-*` 클래스 사용 금지. 가독성이 떨어지므로 명시적 색상 클래스 사용 권장.
+
 ### 17.2 타이포그래피 (Typography)
 
 | Font | 용도 | 적용 |
