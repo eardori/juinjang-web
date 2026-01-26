@@ -54,10 +54,10 @@ export default function StatsSection() {
               <p className="text-primary text-base font-bold uppercase tracking-widest">
                 {stat.label}
               </p>
-              <p className="text-text-primary tracking-tighter text-6xl font-black">
+              <p className="text-[#1d0c0c] tracking-tighter text-6xl font-black">
                 {stat.value}
               </p>
-              <p className="text-sm opacity-60">{stat.description}</p>
+              <p className="text-[#1d0c0c]/60 text-sm">{stat.description}</p>
             </motion.div>
           ))}
         </div>

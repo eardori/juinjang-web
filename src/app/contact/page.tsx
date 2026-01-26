@@ -88,10 +88,10 @@ export default function ContactPage() {
         <div className="max-w-[1200px] mx-auto">
           {/* Headline Section */}
           <div className="mb-12">
-            <h1 className="font-[var(--font-playfair)] text-gray-900 text-[48px] md:text-[64px] font-medium leading-tight mb-4">
+            <h1 className="font-[var(--font-playfair)] text-[#1d0c0c] text-[48px] md:text-[64px] font-medium leading-tight mb-4">
               문의하기
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl">
+            <p className="text-lg text-[#1d0c0c]/70 max-w-2xl">
               파트너십, 투자, 위탁운영에 관심이 있으시면 아래 양식을 통해
               문의해주세요. 담당자가 빠른 시일 내에 연락드리겠습니다.
             </p>
@@ -99,7 +99,7 @@ export default function ContactPage() {
 
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           {/* Left Column: Inquiry Form */}
-          <div className="flex-1 bg-white p-8 md:p-10 rounded-xl shadow-sm border border-gray-200">
+          <div className="flex-1 bg-surface-light p-8 md:p-10 rounded-xl shadow-sm border border-border-light">
             {submitStatus === "success" ? (
               <div className="flex flex-col items-center justify-center py-16 text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
@@ -107,10 +107,10 @@ export default function ContactPage() {
                     check_circle
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-[#1d0c0c] mb-2">
                   문의가 접수되었습니다
                 </h3>
-                <p className="text-gray-500 mb-6">
+                <p className="text-[#1d0c0c]/60 mb-6">
                   담당자가 영업일 기준 1-2일 내에 연락드리겠습니다.
                 </p>
                 <button
@@ -124,7 +124,7 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 {/* Name Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     이름 *
                   </label>
                   <input
@@ -133,14 +133,14 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary h-14 placeholder:text-gray-400 p-4 text-base font-normal outline-none transition-all"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary h-14 placeholder:text-[#1d0c0c]/40 p-4 text-base font-normal outline-none transition-all"
                     placeholder="홍길동"
                   />
                 </div>
 
                 {/* Email Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     이메일 *
                   </label>
                   <input
@@ -149,14 +149,14 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary h-14 placeholder:text-gray-400 p-4 text-base font-normal outline-none transition-all"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary h-14 placeholder:text-[#1d0c0c]/40 p-4 text-base font-normal outline-none transition-all"
                     placeholder="email@example.com"
                   />
                 </div>
 
                 {/* Phone Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     연락처
                   </label>
                   <input
@@ -164,14 +164,14 @@ export default function ContactPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary h-14 placeholder:text-gray-400 p-4 text-base font-normal outline-none transition-all"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary h-14 placeholder:text-[#1d0c0c]/40 p-4 text-base font-normal outline-none transition-all"
                     placeholder="010-1234-5678"
                   />
                 </div>
 
                 {/* Inquiry Type Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     문의 유형 *
                   </label>
                   <select
@@ -179,7 +179,7 @@ export default function ContactPage() {
                     value={formData.inquiryType}
                     onChange={handleChange}
                     required
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary h-14 p-4 text-base font-normal outline-none appearance-none transition-all cursor-pointer"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary h-14 p-4 text-base font-normal outline-none appearance-none transition-all cursor-pointer"
                   >
                     {inquiryTypes.map((type) => (
                       <option key={type.value} value={type.value}>
@@ -191,7 +191,7 @@ export default function ContactPage() {
 
                 {/* Property Name Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     시설명 / 회사명
                   </label>
                   <input
@@ -199,14 +199,14 @@ export default function ContactPage() {
                     name="propertyName"
                     value={formData.propertyName}
                     onChange={handleChange}
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary h-14 placeholder:text-gray-400 p-4 text-base font-normal outline-none transition-all"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary h-14 placeholder:text-[#1d0c0c]/40 p-4 text-base font-normal outline-none transition-all"
                     placeholder="(선택사항)"
                   />
                 </div>
 
                 {/* Message Field */}
                 <div className="flex flex-col gap-2">
-                  <label className="text-gray-700 text-sm font-semibold uppercase tracking-wider">
+                  <label className="text-[#1d0c0c]/80 text-sm font-semibold uppercase tracking-wider">
                     문의 내용 *
                   </label>
                   <textarea
@@ -215,7 +215,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="flex w-full rounded-lg text-gray-900 focus:ring-1 focus:ring-primary border border-gray-300 bg-white focus:border-primary placeholder:text-gray-400 p-4 text-base font-normal outline-none transition-all resize-none"
+                    className="flex w-full rounded-lg text-[#1d0c0c] focus:ring-1 focus:ring-primary border border-border-card-light bg-white focus:border-primary placeholder:text-[#1d0c0c]/40 p-4 text-base font-normal outline-none transition-all resize-none"
                     placeholder="문의 내용을 입력해주세요."
                   />
                 </div>
@@ -250,7 +250,7 @@ export default function ContactPage() {
           {/* Right Column: Office Details */}
           <div className="lg:w-[400px] flex flex-col gap-10">
             {/* Kakao Map */}
-            <div className="w-full h-64 rounded-xl overflow-hidden border border-gray-200 relative">
+            <div className="w-full h-64 rounded-xl overflow-hidden border border-border-light relative">
               <KakaoMap
                 latitude={COMPANY_COORDS.lat}
                 longitude={COMPANY_COORDS.lng}
@@ -279,7 +279,7 @@ export default function ContactPage() {
                 <h3 className="text-xs font-black uppercase tracking-widest text-primary mb-4">
                   본사
                 </h3>
-                <p className="text-lg font-medium leading-relaxed text-gray-800">
+                <p className="text-lg font-medium leading-relaxed text-[#1d0c0c]">
                   경기도 하남시 미사강변동로 72,
                   <br />
                   9층 915호
@@ -294,10 +294,10 @@ export default function ContactPage() {
                     <span className="material-symbols-outlined">call</span>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#1d0c0c]/50">
                       전화
                     </p>
-                    <a href="tel:031-791-2597" className="text-base font-semibold text-gray-800 hover:text-primary transition-colors">
+                    <a href="tel:031-791-2597" className="text-base font-semibold text-[#1d0c0c] hover:text-primary transition-colors">
                       031-791-2597
                     </a>
                   </div>
@@ -308,10 +308,10 @@ export default function ContactPage() {
                     <span className="material-symbols-outlined">mail</span>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#1d0c0c]/50">
                       이메일
                     </p>
-                    <a href="mailto:contact@juinjang.co.kr" className="text-base font-semibold text-gray-800 hover:text-primary transition-colors">
+                    <a href="mailto:contact@juinjang.co.kr" className="text-base font-semibold text-[#1d0c0c] hover:text-primary transition-colors">
                       contact@juinjang.co.kr
                     </a>
                   </div>
@@ -322,29 +322,29 @@ export default function ContactPage() {
                     <span className="material-symbols-outlined">schedule</span>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#1d0c0c]/50">
                       영업시간
                     </p>
-                    <p className="text-base font-semibold text-gray-800">평일 09:00 - 18:00</p>
+                    <p className="text-base font-semibold text-[#1d0c0c]">평일 09:00 - 18:00</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Company Info */}
-            <div className="pt-6 border-t border-gray-200">
+            <div className="pt-6 border-t border-border-light">
               <h3 className="text-xs font-black uppercase tracking-widest text-primary mb-4">
                 회사 정보
               </h3>
-              <div className="text-sm text-gray-600 space-y-1">
+              <div className="text-sm text-[#1d0c0c]/70 space-y-1">
                 <p>
-                  <span className="font-semibold text-gray-800">법인명:</span> (주)인장매니지먼트
+                  <span className="font-semibold text-[#1d0c0c]">법인명:</span> (주)인장매니지먼트
                 </p>
                 <p>
-                  <span className="font-semibold text-gray-800">대표자:</span> 노경표
+                  <span className="font-semibold text-[#1d0c0c]">대표자:</span> 노경표
                 </p>
                 <p>
-                  <span className="font-semibold text-gray-800">사업자번호:</span> 793-86-01745
+                  <span className="font-semibold text-[#1d0c0c]">사업자번호:</span> 793-86-01745
                 </p>
               </div>
             </div>
