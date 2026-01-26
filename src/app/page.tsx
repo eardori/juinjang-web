@@ -1,13 +1,21 @@
+/**
+ * Home Page - 주인장 메인 홈페이지
+ *
+ * @description Hero, Stats, Portfolio Carousel, CTA 섹션으로 구성
+ */
+
+import HeroSection from "@/components/home/HeroSection";
+import StatsSection from "@/components/home/StatsSection";
+import PortfolioCarousel from "@/components/home/PortfolioCarousel";
+import CTASection from "@/components/home/CTASection";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-[var(--primary)]">주인장</h1>
-      <p className="mt-4 text-lg text-gray-600">
-        잠들어 있는 공간에 토탈 솔루션
-      </p>
-      <p className="mt-2 text-sm text-gray-500">
-        사이트 구축 중...
-      </p>
-    </main>
+    <>
+      <HeroSection />
+      <StatsSection />
+      <PortfolioCarousel />
+      <CTASection />
+    </>
   );
 }

@@ -7,8 +7,39 @@
 
 ## [Unreleased]
 
+---
+
+## [0.2.0] - 2026-01-26
+
 ### Added
-- 프로젝트 초기 설정
+- 디자인 시스템 문서화 (CLAUDE.md 섹션 17)
+  - 색상, 타이포그래피, 간격, Border Radius 정의
+  - 컴포넌트 스타일 가이드
+  - 반응형 브레이크포인트 문서화
+- 글로벌 CSS 업데이트 (Tailwind v4 @theme 적용)
+  - 커스텀 색상 토큰
+  - 커스텀 폰트 패밀리
+  - 애니메이션 키프레임
+- Layout 컴포넌트
+  - `src/components/layout/Header.tsx`: 반응형 헤더, 모바일 메뉴
+  - `src/components/layout/Footer.tsx`: 4컬럼 푸터, 회사 정보
+- Home 페이지 컴포넌트
+  - `src/components/home/HeroSection.tsx`: 히어로 섹션 (framer-motion)
+  - `src/components/home/StatsSection.tsx`: 통계 섹션
+  - `src/components/home/PortfolioCarousel.tsx`: 포트폴리오 캐러셀
+  - `src/components/home/CTASection.tsx`: CTA 섹션
+- Portfolio 페이지
+  - `src/app/portfolio/page.tsx`: 4컬럼 그리드 포트폴리오
+  - `src/components/portfolio/PortfolioCard.tsx`: 포트폴리오 카드
+- Partnership 페이지
+  - `src/app/partnership/page.tsx`: 파트너십 안내 (위탁운영/개발투자/가맹)
+- Contact 페이지
+  - `src/app/contact/page.tsx`: 문의 양식 및 회사 연락처
+
+### Changed
+- `src/app/layout.tsx`: Manrope, Playfair Display 폰트 적용
+- `src/app/page.tsx`: 홈 페이지 컴포넌트 조합으로 변경
+- `src/app/globals.css`: Tailwind v4 디자인 토큰 적용
 
 ---
 

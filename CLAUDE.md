@@ -456,6 +456,168 @@ src/
   - framer-motion 설치
   - 기본 페이지 구조 생성 (layout.tsx, page.tsx)
   - 문서화 규칙 설정
+- **[완료]** 디자인 시스템 구현 (v0.2.0)
+  - Google Stitch 디자인 시안 기반 구현
+  - CLAUDE.md 섹션 17에 디자인 시스템 문서화
+  - Tailwind v4 @theme 디자인 토큰 적용
+  - Manrope, Playfair Display 폰트 설정
+- **[완료]** 핵심 페이지 구현
+  - Home 페이지 (Hero, Stats, Carousel, CTA)
+  - Portfolio 페이지 (4컬럼 그리드)
+  - Partnership 페이지 (위탁운영, 개발투자, 가맹)
+  - Contact 페이지 (문의 양식, 연락처)
+  - 빌드 성공 확인
+
+---
+
+## 17. 디자인 시스템 (Design System)
+
+### 17.1 색상 (Colors)
+
+| Token | Value | 용도 |
+|-------|-------|------|
+| `primary` | `#8a0000` | 브랜드 컬러, CTA 버튼, 강조 |
+| `background-light` | `#fcf8f8` | 라이트 모드 배경 |
+| `background-dark` | `#1d0c0c` | 다크 모드 배경 |
+| `surface-light` | `#ffffff` | 카드, 컨테이너 (라이트) |
+| `surface-dark` | `#230f0f` | 카드, 컨테이너 (다크) |
+| `border-light` | `#f4e6e6` | 보더 (라이트) |
+| `border-dark` | `#3d2a2a` | 보더 (다크) |
+| `text-primary` | `#1d0c0c` | 주요 텍스트 (라이트) |
+| `text-secondary` | `#fcf8f8` | 주요 텍스트 (다크) |
+
+### 17.2 타이포그래피 (Typography)
+
+| Font | 용도 | 적용 |
+|------|------|------|
+| **Manrope** | 본문, UI 텍스트 | `font-display` (기본) |
+| **Playfair Display** | 제목, 강조 | `font-serif` |
+
+**크기 체계:**
+- Hero 제목: `text-4xl md:text-7xl` (Playfair Display)
+- 섹션 제목: `text-3xl font-bold` (Manrope)
+- 카드 제목: `text-xl font-bold`
+- 본문: `text-base` 또는 `text-lg`
+- 캡션: `text-sm` 또는 `text-xs`
+
+### 17.3 간격 & 레이아웃 (Spacing & Layout)
+
+| 요소 | 값 |
+|------|-----|
+| 최대 너비 | `max-w-[1200px]` |
+| 페이지 패딩 | `px-6 lg:px-10` |
+| 섹션 패딩 | `py-20` ~ `py-24` |
+| 헤더 높이 | `72px` (py-4 + 콘텐츠) |
+| 히어로 높이 | `h-[85vh]` |
+
+### 17.4 Border Radius
+
+| Token | Value |
+|-------|-------|
+| DEFAULT | `0.25rem` (4px) |
+| lg | `0.5rem` (8px) |
+| xl | `0.75rem` (12px) |
+| full | `9999px` |
+
+### 17.5 컴포넌트 스타일
+
+#### Header
+```css
+fixed top-0 left-0 right-0 z-50
+bg-background-light/80 dark:bg-background-dark/80
+backdrop-blur-md
+border-b border-[#f4e6e6] dark:border-[#3d2a2a]
+px-6 lg:px-40 py-4
+```
+
+#### Hero Section
+```css
+relative w-full h-[85vh] overflow-hidden
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url(...)
+```
+
+#### Stats Card
+```css
+rounded-xl p-10
+border border-[#eacdcd] dark:border-[#3d2a2a]
+bg-white dark:bg-[#230f0f]
+shadow-sm hover:shadow-md transition-shadow
+```
+
+#### Portfolio Card
+```css
+rounded-xl
+bg-white dark:bg-[#230f0f]
+shadow-lg
+border border-black/5 dark:border-white/5
+/* 이미지 aspect ratio */
+aspect-[16/10]
+```
+
+#### CTA Button (Primary)
+```css
+min-w-[200px] h-14 rounded-lg
+bg-primary text-white
+font-bold text-lg
+hover:bg-primary/90 transition-all
+shadow-xl
+```
+
+#### CTA Button (Secondary/Outline)
+```css
+min-w-[200px] h-14 rounded-lg
+border border-white text-white
+font-bold text-lg
+hover:bg-white/10 transition-all
+backdrop-blur-sm
+```
+
+### 17.6 아이콘 (Icons)
+
+**Material Symbols Outlined** 사용
+```css
+font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+```
+
+주요 아이콘:
+- `location_on` - 위치
+- `arrow_forward` - 화살표
+- `mail` - 이메일
+- `call` - 전화
+- `pin_drop` - 주소
+
+### 17.7 애니메이션
+
+| 효과 | 클래스 |
+|------|--------|
+| 기본 전환 | `transition-colors duration-300` |
+| 호버 스케일 | `active:scale-95` |
+| 그림자 전환 | `transition-shadow` |
+| 배경 전환 | `transition-all` |
+
+### 17.8 다크 모드
+
+`class` 기반 다크 모드 (`darkMode: "class"`)
+- HTML 요소에 `class="dark"` 추가로 전환
+- 모든 컬러는 `dark:` 접두사로 오버라이드
+
+### 17.9 반응형 브레이크포인트
+
+| 브레이크포인트 | 적용 |
+|---------------|------|
+| `sm` (640px) | 버튼 가로 배치 |
+| `md` (768px) | 네비게이션 표시, 그리드 3열 |
+| `lg` (1024px) | 더 넓은 패딩 |
+
+### 17.10 디자인 파일 참조
+
+```
+assets/stitch_juinjang_home_page/
+├── juinjang_home_page/code.html          # 홈 페이지
+├── juinjang_portfolio_grid/code.html     # 포트폴리오 그리드
+├── juinjang_partnership_&_investment/    # 파트너십 페이지
+└── juinjang_contact_&_inquiry/           # 문의 페이지
+```
 
 ---
 
