@@ -1,94 +1,112 @@
 "use client";
 
 /**
- * Header - 상단 네비게이션 헤더 컴포넌트
+ * Header v3 - 주인장 B2B Corporate Style (i18n)
  *
- * @description 고정형 헤더, backdrop-blur 효과, 반응형 네비게이션
+ * @description Fixed header with gold accent, B2B corporate feel
  */
 
 import Link from "next/link";
 import { useState } from "react";
-
-const navLinks = [
-  { href: "/portfolio", label: "포트폴리오" },
-  { href: "/partnership", label: "파트너십" },
-  { href: "/about", label: "회사소개" },
-];
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("nav");
+  const locale = useLocale();
+
+  const navLinks = [
+    { href: `/${locale}`, label: t("home") },
+    { href: `/${locale}/brand`, label: t("brand") },
+    { href: `/${locale}/partnership`, label: t("partnership") },
+    { href: `/${locale}/reference`, label: t("reference") },
+    { href: `/${locale}/contact`, label: t("contact") },
+  ];
+
+  const otherLocale = locale === "ko" ? "en" : "ko";
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center bg-background-light/80 backdrop-blur-md border-b border-solid border-border-light px-6 lg:px-40 py-4">
-      <div className="flex w-full max-w-[1200px] items-center justify-between">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+      <div className="max-w-[1400px] mx-auto px-8 h-24 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="size-8 text-primary">
-            <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path clipRule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fillRule="evenodd" />
-            </svg>
+        <Link href={`/${locale}`} className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-[#8B0000] rounded flex items-center justify-center">
+            <span className="text-white font-bold text-lg">주</span>
           </div>
-          <h1 className="text-text-primary text-xl font-extrabold leading-tight tracking-tight uppercase">
-            Juinjang
-          </h1>
+          <span className="text-2xl font-serif tracking-wide text-slate-900">
+            주인장
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 justify-center gap-12">
+        <nav className="hidden md:flex gap-10 text-sm uppercase tracking-widest font-semibold text-slate-600">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold hover:text-primary transition-colors"
+              className="hover:text-[#C5A47E] transition-colors"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* CTA & Mobile Menu Button */}
-        <div className="flex items-center gap-4">
+        {/* CTA Button & Language Switcher */}
+        <div className="hidden md:flex items-center gap-4">
           <Link
-            href="/contact"
-            className="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold tracking-wide transition-transform active:scale-95 hover:bg-primary/90"
+            href={`/${otherLocale}`}
+            className="text-sm font-semibold text-slate-500 hover:text-[#C5A47E] transition-colors uppercase"
           >
-            문의하기
+            {otherLocale === "ko" ? "한국어" : "EN"}
           </Link>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden flex items-center justify-center size-10 rounded-lg hover:bg-border-light transition-colors"
-            aria-label="메뉴 열기"
+          <Link
+            href={`/${locale}/contact`}
+            className="bg-[#8B0000] text-white px-8 py-3 uppercase text-xs tracking-widest hover:bg-[#C5A47E] transition-colors"
           >
-            <span className="material-symbols-outlined">
-              {isMobileMenuOpen ? "close" : "menu"}
-            </span>
-          </button>
+            {t("inquiry")}
+          </Link>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="md:hidden text-slate-800"
+          aria-label="Toggle menu"
+        >
+          <i className={`ri-${isMobileMenuOpen ? "close" : "menu"}-line text-2xl`} />
+        </button>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background-light/95 backdrop-blur-md border-b border-border-light md:hidden">
-          <nav className="flex flex-col py-4 px-6">
+        <div className="md:hidden bg-white border-t border-gray-100">
+          <nav className="flex flex-col py-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="py-3 text-base font-semibold hover:text-primary transition-colors border-b border-border-light last:border-0"
                 onClick={() => setIsMobileMenuOpen(false)}
+                className="px-8 py-4 text-sm uppercase tracking-widest font-semibold text-slate-600 hover:text-[#C5A47E] hover:bg-gray-50 transition-colors"
               >
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="mt-4 flex items-center justify-center rounded-lg h-12 bg-primary text-white font-bold transition-transform active:scale-95"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              문의하기
-            </Link>
+            <div className="px-8 py-4 flex flex-col gap-4">
+              <Link
+                href={`/${otherLocale}`}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-center text-sm font-semibold text-slate-500 hover:text-[#C5A47E] transition-colors uppercase py-2"
+              >
+                {otherLocale === "ko" ? "한국어" : "English"}
+              </Link>
+              <Link
+                href={`/${locale}/contact`}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-center bg-[#8B0000] text-white px-8 py-3 uppercase text-xs tracking-widest hover:bg-[#C5A47E] transition-colors"
+              >
+                {t("inquiry")}
+              </Link>
+            </div>
           </nav>
         </div>
       )}

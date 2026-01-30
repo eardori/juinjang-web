@@ -1,66 +1,65 @@
+"use client";
+
 /**
- * Footer - 하단 푸터 컴포넌트
+ * Footer v3 - 주인장 B2B Corporate Style (i18n)
  *
- * @description 회사 정보, 링크, 연락처를 포함한 4컬럼 푸터
+ * @description Dark footer with company info and newsletter
  */
 
 import Link from "next/link";
-
-const resourceLinks = [
-  { href: "/partnership#managed", label: "위탁운영" },
-  { href: "/partnership#investment", label: "개발투자" },
-  { href: "/partnership#franchise", label: "브랜드 가맹" },
-];
-
-const networkLinks = [
-  { href: "/portfolio", label: "포트폴리오" },
-  { href: "/partnership", label: "파트너십" },
-  { href: "/about", label: "회사소개" },
-];
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const locale = useLocale();
+
+  const quickLinks = [
+    { href: `/${locale}`, label: t("links.home") },
+    { href: `/${locale}/brand`, label: t("links.brand") },
+    { href: `/${locale}/partnership`, label: t("links.partnership") },
+    { href: `/${locale}/reference`, label: t("links.reference") },
+    { href: `/${locale}/contact`, label: t("links.contact") },
+  ];
+
   return (
-    <footer className="bg-footer-light py-16">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-primary/10 pb-12">
+    <footer
+      id="contact"
+      className="bg-[#1a1a1a] text-white pt-24 pb-12 border-t border-white/10"
+    >
+      <div className="max-w-[1400px] mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="size-6 text-primary">
-                <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path clipRule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fillRule="evenodd" />
-                </svg>
+              <div className="w-10 h-10 bg-[#8B0000] rounded flex items-center justify-center">
+                <span className="text-white font-bold text-lg">주</span>
               </div>
-              <h2 className="text-xl font-extrabold uppercase tracking-tight text-text-primary">Juinjang</h2>
+              <div>
+                <span className="text-xl font-serif tracking-wide block">
+                  {t("brand")}
+                </span>
+                <span className="text-xs text-gray-500">{t("company")}</span>
+              </div>
             </div>
-            <p className="text-sm text-[#1d0c0c]/60 leading-relaxed">
-              잠들어 있는 공간에 토탈 솔루션.
-              <br />
-              프리미엄 애견 글램핑 리조트 운영 전문 기업.
+            <p className="text-gray-400 mb-6 leading-relaxed text-sm">
+              {t("description")}
             </p>
+            <div className="text-xs text-gray-500 space-y-1">
+              <p>{t("businessInfo.ceo")}</p>
+              <p>{t("businessInfo.businessNumber")}</p>
+            </div>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">서비스</h4>
-            <ul className="space-y-4 text-sm text-[#1d0c0c]/70">
-              {resourceLinks.map((link) => (
+          {/* Quick Links */}
+          <div className="col-span-1">
+            <h4 className="text-lg font-bold mb-6">{t("quickLinks")}</h4>
+            <ul className="space-y-3 text-gray-400">
+              {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Network */}
-          <div>
-            <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">바로가기</h4>
-            <ul className="space-y-4 text-sm text-[#1d0c0c]/70">
-              {networkLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-primary transition-colors">
+                  <Link
+                    href={link.href}
+                    className="hover:text-[#C5A47E] transition-colors text-sm"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -69,36 +68,50 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="font-bold mb-6 text-primary uppercase tracking-widest text-xs">연락처</h4>
-            <ul className="space-y-4 text-sm text-[#1d0c0c]/70">
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-lg text-primary">mail</span>
-                contact@juinjang.co.kr
+          <div className="col-span-1">
+            <h4 className="text-lg font-bold mb-6">{t("contactTitle")}</h4>
+            <ul className="space-y-4 text-gray-400 text-sm">
+              <li className="flex items-start gap-3">
+                <i className="ri-map-pin-line text-[#C5A47E] mt-0.5" />
+                <span className="whitespace-pre-line">{t("address")}</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-lg text-primary">call</span>
-                031-791-2597
+              <li className="flex items-center gap-3">
+                <i className="ri-phone-line text-[#C5A47E]" />
+                <span>{t("phone")}</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-lg text-primary">pin_drop</span>
-                <span>경기도 하남시 미사강변동로 72,<br />9층 915호</span>
+              <li className="flex items-center gap-3">
+                <i className="ri-mail-line text-[#C5A47E]" />
+                <span>{t("email")}</span>
               </li>
             </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div className="col-span-1">
+            <h4 className="text-lg font-bold mb-6">{t("newsletter.title")}</h4>
+            <p className="text-gray-400 mb-4 text-sm">
+              {t("newsletter.description")}
+            </p>
+            <form className="space-y-3">
+              <input
+                type="email"
+                placeholder={t("newsletter.placeholder")}
+                className="w-full bg-gray-900 border border-gray-800 p-3 text-white text-sm focus:outline-none focus:border-[#C5A47E] transition-colors"
+              />
+              <button
+                type="submit"
+                className="w-full bg-[#8B0000] text-white p-3 uppercase text-xs tracking-widest font-bold hover:bg-[#C5A47E] transition-colors"
+              >
+                {t("newsletter.button")}
+              </button>
+            </form>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-[#1d0c0c]/50">
-          <p>© 2024 (주)인장매니지먼트. All rights reserved.</p>
-          <div className="flex gap-8">
-            <Link href="/privacy" className="hover:text-primary">
-              개인정보처리방침
-            </Link>
-            <Link href="/terms" className="hover:text-primary">
-              이용약관
-            </Link>
-          </div>
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between text-gray-500 text-xs gap-4">
+          <p>{t("copyright")}</p>
+          <p className="text-[#C5A47E] font-semibold tracking-wider">{t("tagline")}</p>
         </div>
       </div>
     </footer>

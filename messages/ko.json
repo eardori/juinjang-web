@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "주인장 | (주)인장매니지먼트",
+    "description": "잠들어있는 공간에 토탈 솔루션 - 숙박사업, F&B사업, 리테일사업 전문 운영"
+  },
+  "nav": {
+    "home": "Home",
+    "brand": "Brand",
+    "partnership": "Partnership",
+    "reference": "Reference",
+    "contact": "Contact us",
+    "inquiry": "문의하기"
+  },
+  "hero": {
+    "title": "REBIRTH;REVERSE",
+    "subtitle": "잠들어있는 공간에 토탈 솔루션",
+    "description": "빛을 보지 못한 공간의 가능성을 보는 통찰력",
+    "ctaPartnership": "파트너십 문의",
+    "ctaReference": "포트폴리오 보기"
+  },
+  "about": {
+    "subtitle": "About Us",
+    "title": "주인장의 마음으로 운영합니다",
+    "description": "잠자고 있는 사회의 시설들을 (주)인장매니지먼트를 통해 새로운 모습으로 컨셉, 문화를 입혀 성공 가능한 시설로 탈바꿈합니다.",
+    "vision": "(주)인장매니지먼트의 숙박사업 · F&B사업 · 리테일사업은 잠들어있는 공간들의 정보를 실시간 수집하여 주어진 조건에서 인테리어, 디자인, 마케팅, 운영, 제휴를 통해 최상의 결과를 만들어냅니다.",
+    "services": [
+      {
+        "title": "전문적인 운영 컨설팅",
+        "description": "상권분석부터 수익분석까지 데이터 분석을 통한 효율적이고 전문적인 프로세스를 만들어 최대 매출을 만들어 냅니다.",
+        "cta": "문의하기"
+      },
+      {
+        "title": "지속가능한 브랜드 개발",
+        "description": "주인장 자체 브랜드를 개발하고 다양한 파트너십과 연계하여 사업을 확장하고 수익을 창출합니다.",
+        "cta": "브랜드 보기"
+      },
+      {
+        "title": "다양한 형태의 파트너십",
+        "description": "투자개발, 위탁운영, 위탁판매, 가맹사업, 제휴사업 등 주인장의 브랜드를 통한 다양한 파트너십을 진행중입니다.",
+        "cta": "파트너십 보기"
+      }
+    ]
+  },
+  "stats": {
+    "facilities": "운영 시설",
+    "facilitiesValue": "9",
+    "facilitiesUnit": "개",
+    "lodging": "숙박사업",
+    "lodgingValue": "7",
+    "lodgingUnit": "개",
+    "fnb": "F&B사업",
+    "fnbValue": "2",
+    "fnbUnit": "개",
+    "investment": "개발투자 진행",
+    "investmentValue": "9",
+    "investmentUnit": "건"
+  },
+  "portfolio": {
+    "subtitle": "Our Portfolio",
+    "title": "운영 중인 시설",
+    "viewAll": "전체 보기",
+    "locations": "전국 8개 지점 운영"
+  },
+  "cta": {
+    "title": "파트너십 문의",
+    "description": "시설임대, 시설위탁, 시설투자관련, 리모델링, 운영컨설팅 등 주인장과 관련된 모든 문의를 편하게 보내주세요.",
+    "button": "문의하기"
+  },
+  "brand": {
+    "subtitle": "Our Brand",
+    "title": "GLAM DOG",
+    "tagline": "LUXURY PET COTTAGE",
+    "description": "주인장의 첫번째 브랜드 글램독은 반려견과 함께하는 프리미엄 펜션 브랜드입니다. 전국 8개 지점에서 특별한 휴식을 제공합니다.",
+    "features": {
+      "pool": "수영장",
+      "playground": "운동장",
+      "bbq": "바베큐",
+      "oceanView": "오션뷰"
+    },
+    "contact": "문의",
+    "booking": "예약하기",
+    "address": "주소"
+  },
+  "partnership": {
+    "subtitle": "Partnership",
+    "title": "다양한 형태의 파트너십",
+    "description": "주인장은 다양한 형태에 따른 파트너십을 제공하고 있습니다. 파트너의 상황에 따라 다양한 솔루션을 제공하고 있으며, 주인장이 개발하는 브랜드와 함께 최적의 솔루션을 제공합니다.",
+    "types": [
+      {
+        "title": "개발투자",
+        "description": "주인장에서 진행하는 사업건에 직/간접적으로 투자를 하는 형태로서, 자본은 있지만 개발 및 운영할 여력이 되지 않은분이나, 주인장이 개발하는 사업에 소액투자하여 수익쉐어를 받고 싶은 분을 대상으로 진행하고 있습니다.",
+        "stats": "현재는 주인장의 첫 브랜드인 글램독의 숙박시설 7개, F&B시설 2개 총 9개의 개발투자가 진행되었습니다."
+      },
+      {
+        "title": "위탁운영",
+        "description": "기존의 운영중인 시설을 다양한 이유로 직접 운영하기 어려울 경우, 주인장에게 전문적으로 경영/관리/운영을 맡기고, 이에대한 수익을 배분하는 형태입니다.",
+        "stats": "현재는 주인장의 첫 브랜드인 글램독 브랜드의 위탁운영을 진행하고 있습니다."
+      },
+      {
+        "title": "브랜드 가맹",
+        "description": "기존의 운영중인 시설을 직접 운영하면서 주인장의 브랜드를 사용하고 이에대한 서비스를 제공받고 일정의 수수료를 정산하는 방식입니다.",
+        "stats": "현재는 주인장의 첫 브랜드인 글램독의 브랜드 가맹을 준비중입니다."
+      }
+    ],
+    "cta": {
+      "title": "파트너십 문의",
+      "description": "주인장 파트너십과 관련된 궁금하신 점이나 파트너십과 관련하여 상담이 필요하시면 언제든지 문의주세요.",
+      "button": "문의하기"
+    }
+  },
+  "reference": {
+    "subtitle": "Reference",
+    "title": "운영 포트폴리오",
+    "description": "주인장이 운영 중인 시설들입니다.",
+    "operating": "운영중",
+    "closed": "운영종료",
+    "viewDetails": "상세보기"
+  },
+  "contact": {
+    "subtitle": "Contact us",
+    "title": "문의하기",
+    "description": "시설임대, 시설위탁, 시설투자관련, 리모델링, 운영컨설팅 주인장과 관련된 모든 문의를 편하게 보내주세요.",
+    "form": {
+      "name": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "phone": "전화번호",
+      "phonePlaceholder": "연락받으실 번호를 입력하세요",
+      "facilityName": "숙소이름",
+      "facilityNamePlaceholder": "숙소/시설 이름 (선택)",
+      "inquiryType": "문의 분야",
+      "types": {
+        "facility": "시설임대문의",
+        "investment": "투자문의",
+        "partnership": "제휴문의",
+        "other": "기타문의"
+      },
+      "message": "문의 내용",
+      "messagePlaceholder": "문의하실 내용을 자유롭게 작성해주세요",
+      "submit": "문의하기",
+      "submitting": "전송 중...",
+      "success": "문의가 성공적으로 전송되었습니다.",
+      "error": "문의 전송에 실패했습니다. 다시 시도해주세요."
+    },
+    "info": {
+      "title": "연락처",
+      "address": "경기도 하남시 미사강변동로 72, 9층 915호",
+      "phone": "031-791-2597",
+      "email": "contact@juinjang.co.kr"
+    }
+  },
+  "footer": {
+    "brand": "주인장",
+    "company": "(주)인장매니지먼트",
+    "description": "잠들어있는 공간에 토탈 솔루션을 제공합니다. 숙박사업, F&B사업, 리테일사업을 통해 공간의 새로운 가능성을 만들어갑니다.",
+    "quickLinks": "바로가기",
+    "links": {
+      "home": "홈",
+      "brand": "브랜드",
+      "partnership": "파트너십",
+      "reference": "포트폴리오",
+      "contact": "문의하기",
+      "privacy": "개인정보처리방침"
+    },
+    "contactTitle": "연락처",
+    "address": "경기도 하남시 미사강변동로 72,\n9층 915호",
+    "phone": "031-791-2597",
+    "email": "contact@juinjang.co.kr",
+    "businessInfo": {
+      "ceo": "대표: 노경표",
+      "businessNumber": "사업자등록번호: 793-86-01745"
+    },
+    "newsletter": {
+      "title": "뉴스레터",
+      "description": "주인장의 소식과 새로운 파트너십 기회를 받아보세요.",
+      "placeholder": "이메일 주소",
+      "button": "구독하기"
+    },
+    "copyright": "© 2024 (주)인장매니지먼트. All rights reserved.",
+    "tagline": "REBIRTH;REVERSE"
+  },
+  "locations": {
+    "gapyeong": {
+      "name": "글램독 가평점",
+      "region": "경기 가평",
+      "features": "야외 수영장, 잔디 운동장, BBQ",
+      "address": "경기도 가평군 가평읍 가화로",
+      "phone": "예약문의",
+      "booking": "glamdog.co.kr"
+    },
+    "cheongpyeong": {
+      "name": "글램독 청평점",
+      "region": "경기 가평",
+      "features": "청평호 리버뷰, 오두막 바베큐장",
+      "address": "경기도 가평군 청평면 고성리",
+      "phone": "예약문의",
+      "booking": "glamdog.co.kr"
+    },
+    "yeonghungdo": {
+      "name": "글램독 영흥점",
+      "region": "인천 옹진",
+      "features": "영흥도대교와 서해바다 오션뷰, 캠핑감성",
+      "address": "인천광역시 옹진군 영흥면 영흥남로9번길 123",
+      "phone": "010-8650-2597",
+      "booking": "glamdog02.co.kr"
+    },
+    "gyeongju": {
+      "name": "글램독 경주점",
+      "region": "경북 경주",
+      "features": "넓은 운동장과 수영장, 경주의 옛스러운 감성",
+      "address": "경상북도 경주시 천북면 목실길 14-41",
+      "phone": "010-2006-2597",
+      "booking": "glamdog03.co.kr"
+    },
+    "tongyeong": {
+      "name": "글램독 통영점",
+      "region": "경남 통영",
+      "features": "25m 3개 레인 실내 온수수영장, 캠핑감성 촌캉스",
+      "address": "경남 통영시 광도면 용호로 285-16",
+      "phone": "010-3516-2597",
+      "booking": "site.onda.me/119123"
+    },
+    "yangyang": {
+      "name": "글램독 양양점",
+      "region": "강원 양양",
+      "features": "서핑 도시 양양 오션뷰, 글램포레스트, 애견수영장",
+      "address": "강원도 양양군 현남면 화상천로 46",
+      "phone": "010-9397-2597",
+      "booking": "site.onda.me/126265"
+    },
+    "geoje": {
+      "name": "글램독 거제점",
+      "region": "경남 거제",
+      "features": "거제 바다 전객실 오션뷰, 대형 인피니티 풀장, 개인 미온수풀장",
+      "address": "경상남도 거제시 동부면 함박금길 26-5",
+      "phone": "010-8663-2597",
+      "booking": "glamdog01.co.kr"
+    },
+    "paju": {
+      "name": "글램독 그라운드 파주점",
+      "region": "경기 파주",
+      "features": "플래그십, 대형 잔디운동장",
+      "address": "경기도 파주시 문발동",
+      "phone": "예약문의",
+      "booking": "glamdog.co.kr"
+    }
+  }
+}

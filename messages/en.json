@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "JUINJANG | Injang Management Co., Ltd.",
+    "description": "Total Solutions for Dormant Spaces - Hospitality, F&B, and Retail Business Operations"
+  },
+  "nav": {
+    "home": "Home",
+    "brand": "Brand",
+    "partnership": "Partnership",
+    "reference": "Reference",
+    "contact": "Contact us",
+    "inquiry": "Inquire Now"
+  },
+  "hero": {
+    "title": "REBIRTH;REVERSE",
+    "subtitle": "Total Solutions for Dormant Spaces",
+    "description": "The insight to see the potential in spaces that have yet to shine",
+    "ctaPartnership": "Partnership Inquiry",
+    "ctaReference": "View Portfolio"
+  },
+  "about": {
+    "subtitle": "About Us",
+    "title": "We Operate with the Heart of an Owner",
+    "description": "Through Injang Management, we transform dormant facilities in society by giving them new concepts and culture, turning them into successful establishments.",
+    "vision": "Injang Management's hospitality, F&B, and retail businesses collect real-time information on dormant spaces and create optimal results through interior design, marketing, operations, and partnerships under given conditions.",
+    "services": [
+      {
+        "title": "Professional Operations Consulting",
+        "description": "We create efficient and professional processes through data analysis, from commercial area analysis to revenue analysis, to maximize sales.",
+        "cta": "Contact Us"
+      },
+      {
+        "title": "Sustainable Brand Development",
+        "description": "We develop our own brands and expand business and generate revenue through various partnerships.",
+        "cta": "View Brand"
+      },
+      {
+        "title": "Various Forms of Partnership",
+        "description": "We are conducting various partnerships through our brand, including investment development, consignment operations, consignment sales, franchising, and affiliate business.",
+        "cta": "View Partnership"
+      }
+    ]
+  },
+  "stats": {
+    "facilities": "Operating Facilities",
+    "facilitiesValue": "9",
+    "facilitiesUnit": "",
+    "lodging": "Hospitality",
+    "lodgingValue": "7",
+    "lodgingUnit": "",
+    "fnb": "F&B Business",
+    "fnbValue": "2",
+    "fnbUnit": "",
+    "investment": "Development Investments",
+    "investmentValue": "9",
+    "investmentUnit": ""
+  },
+  "portfolio": {
+    "subtitle": "Our Portfolio",
+    "title": "Operating Facilities",
+    "viewAll": "View All",
+    "locations": "8 Locations Nationwide"
+  },
+  "cta": {
+    "title": "Partnership Inquiry",
+    "description": "Please feel free to send us any inquiries related to facility rental, facility consignment, facility investment, remodeling, and operations consulting.",
+    "button": "Contact Us"
+  },
+  "brand": {
+    "subtitle": "Our Brand",
+    "title": "GLAM DOG",
+    "tagline": "LUXURY PET COTTAGE",
+    "description": "GLAM DOG, our first brand, is a premium pet-friendly pension brand. We offer a special retreat at 8 locations nationwide.",
+    "features": {
+      "pool": "Pool",
+      "playground": "Playground",
+      "bbq": "BBQ",
+      "oceanView": "Ocean View"
+    },
+    "contact": "Contact",
+    "booking": "Book Now",
+    "address": "Address"
+  },
+  "partnership": {
+    "subtitle": "Partnership",
+    "title": "Various Forms of Partnership",
+    "description": "JUINJANG offers various types of partnerships. We provide various solutions according to the partner's situation and offer optimal solutions together with our developed brands.",
+    "types": [
+      {
+        "title": "Development Investment",
+        "description": "This is a form of direct or indirect investment in business projects conducted by JUINJANG. It is for those who have capital but lack the resources to develop and operate, or those who want to make small investments in our projects and receive profit sharing.",
+        "stats": "Currently, 9 development investments have been made: 7 lodging facilities and 2 F&B facilities under our first brand, GLAM DOG."
+      },
+      {
+        "title": "Consignment Operations",
+        "description": "When it is difficult to directly operate an existing facility for various reasons, you can entrust professional management and operations to JUINJANG and share the profits.",
+        "stats": "Currently, we are conducting consignment operations for our first brand, GLAM DOG."
+      },
+      {
+        "title": "Brand Franchise",
+        "description": "While operating your existing facility yourself, you can use JUINJANG's brand and receive related services, settling a certain commission.",
+        "stats": "We are currently preparing brand franchising for our first brand, GLAM DOG."
+      }
+    ],
+    "cta": {
+      "title": "Partnership Inquiry",
+      "description": "If you have any questions or need consultation regarding JUINJANG partnership, please feel free to contact us anytime.",
+      "button": "Contact Us"
+    }
+  },
+  "reference": {
+    "subtitle": "Reference",
+    "title": "Operating Portfolio",
+    "description": "Facilities operated by JUINJANG.",
+    "operating": "Operating",
+    "closed": "Closed",
+    "viewDetails": "View Details"
+  },
+  "contact": {
+    "subtitle": "Contact us",
+    "title": "Get in Touch",
+    "description": "Please feel free to contact us for any inquiries related to facility rental, facility consignment, facility investment, remodeling, and operations consulting.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter your phone number",
+      "facilityName": "Facility Name",
+      "facilityNamePlaceholder": "Facility/Property name (optional)",
+      "inquiryType": "Inquiry Type",
+      "types": {
+        "facility": "Facility Rental",
+        "investment": "Investment",
+        "partnership": "Partnership",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Please write your inquiry freely",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "success": "Your inquiry has been submitted successfully.",
+      "error": "Failed to submit. Please try again."
+    },
+    "info": {
+      "title": "Contact Info",
+      "address": "72 Misagangbyeon-dong-ro, 9F #915, Hanam-si, Gyeonggi-do, Korea",
+      "phone": "+82-31-791-2597",
+      "email": "contact@juinjang.co.kr"
+    }
+  },
+  "footer": {
+    "brand": "JUINJANG",
+    "company": "Injang Management Co., Ltd.",
+    "description": "We provide total solutions for dormant spaces. Through hospitality, F&B, and retail businesses, we create new possibilities for spaces.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "brand": "Brand",
+      "partnership": "Partnership",
+      "reference": "Portfolio",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    },
+    "contactTitle": "Contact",
+    "address": "72 Misagangbyeon-dong-ro,\n9F #915, Hanam-si, Gyeonggi-do",
+    "phone": "+82-31-791-2597",
+    "email": "contact@juinjang.co.kr",
+    "businessInfo": {
+      "ceo": "CEO: Kyungpyo Noh",
+      "businessNumber": "Business Reg. No.: 793-86-01745"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay updated with JUINJANG news and partnership opportunities.",
+      "placeholder": "Email address",
+      "button": "Subscribe"
+    },
+    "copyright": "© 2024 Injang Management Co., Ltd. All rights reserved.",
+    "tagline": "REBIRTH;REVERSE"
+  },
+  "locations": {
+    "gapyeong": {
+      "name": "GLAM DOG Gapyeong",
+      "region": "Gapyeong, Gyeonggi",
+      "features": "Outdoor Pool, Lawn Playground, BBQ",
+      "address": "Gahwa-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do",
+      "phone": "Reservation",
+      "booking": "glamdog.co.kr"
+    },
+    "cheongpyeong": {
+      "name": "GLAM DOG Cheongpyeong",
+      "region": "Gapyeong, Gyeonggi",
+      "features": "Cheongpyeong Lake View, Cabin BBQ",
+      "address": "Goseong-ri, Cheongpyeong-myeon, Gapyeong-gun, Gyeonggi-do",
+      "phone": "Reservation",
+      "booking": "glamdog.co.kr"
+    },
+    "yeonghungdo": {
+      "name": "GLAM DOG Yeonghungdo",
+      "region": "Ongjin, Incheon",
+      "features": "West Sea Ocean View, Camping Vibes",
+      "address": "123, Yeonghungnam-ro 9beon-gil, Yeonghung-myeon, Ongjin-gun, Incheon",
+      "phone": "010-8650-2597",
+      "booking": "glamdog02.co.kr"
+    },
+    "gyeongju": {
+      "name": "GLAM DOG Gyeongju",
+      "region": "Gyeongju, Gyeongbuk",
+      "features": "Large Playground, Pool, Historical Ambiance",
+      "address": "14-41, Moksil-gil, Cheonbuk-myeon, Gyeongju-si, Gyeongbuk",
+      "phone": "010-2006-2597",
+      "booking": "glamdog03.co.kr"
+    },
+    "tongyeong": {
+      "name": "GLAM DOG Tongyeong",
+      "region": "Tongyeong, Gyeongnam",
+      "features": "25m Indoor Heated Pool, Camping Vibes",
+      "address": "285-16, Yongho-ro, Gwangdo-myeon, Tongyeong-si, Gyeongnam",
+      "phone": "010-3516-2597",
+      "booking": "site.onda.me/119123"
+    },
+    "yangyang": {
+      "name": "GLAM DOG Yangyang",
+      "region": "Yangyang, Gangwon",
+      "features": "Surfing City Ocean View, Glam Forest, Pet Pool",
+      "address": "46, Hwasangcheon-ro, Hyeonnam-myeon, Yangyang-gun, Gangwon-do",
+      "phone": "010-9397-2597",
+      "booking": "site.onda.me/126265"
+    },
+    "geoje": {
+      "name": "GLAM DOG Geoje",
+      "region": "Geoje, Gyeongnam",
+      "features": "Full Ocean View, Infinity Pool, Private Pool",
+      "address": "26-5, Hambakgeum-gil, Dongbu-myeon, Geoje-si, Gyeongnam",
+      "phone": "010-8663-2597",
+      "booking": "glamdog01.co.kr"
+    },
+    "paju": {
+      "name": "GLAM DOG Ground Paju",
+      "region": "Paju, Gyeonggi",
+      "features": "Flagship, Large Lawn Playground",
+      "address": "Munbal-dong, Paju-si, Gyeonggi-do",
+      "phone": "Reservation",
+      "booking": "glamdog.co.kr"
+    }
+  }
+}
